@@ -1,0 +1,118 @@
+#footer {
+    --footer-text-color: #aaaebb;
+
+    background-color: #2a323d;
+}
+
+.footer-top {
+    padding: 45px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.footer-top__logo {
+    padding-right: 36px;
+    margin-right: 10px;
+}
+
+.footer-top__logo img {
+    height: 38px;
+}
+
+.footer-top__rich-text {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.footer-top__rich-text p {
+    flex: 1;
+    padding: 0 10px;
+    color: var(--footer-text-color);
+    font-size: 14px;
+}
+
+.footer-middle {
+    padding: 50px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.footer-middle__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.footer-middle__title span {
+    display: none;
+}
+
+.footer-middle__item {
+    position: relative;
+}
+
+.footer-middle__item a {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    color: var(--footer-text-color);
+    font-size: 14px;
+    position: relative;
+    transition: 0.2s ease-in-out;
+}
+
+.footer-middle__item a:hover {
+    transform: translateX(14px);
+}
+
+.footer-middle__item::before {
+    content: '';
+    position: absolute;
+    height: 0.5px;
+    width: 10px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: #fff;
+    transition: 0.2s ease-in;
+    opacity: 0;
+}
+
+.footer-middle__item:hover::before {
+    opacity: 1;
+}
+
+.footer-bottom {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.footer-bottom__copyright {
+    font-size: 13.3px;
+    color: var(--footer-text-color);
+    display: flex;
+    align-items: center;
+}
+
+.footer-bottom__options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-bottom__payments {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.footer-bottom__payment-item {
+    margin-left: 10px;
+    cursor: pointer;
+}

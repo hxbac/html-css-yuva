@@ -1,0 +1,139 @@
+#header {
+    --header-search-height: 40px;
+    height: var(--header-height);
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: #fff;
+    transition: 0.5s ease;
+}
+
+.top-header {
+    height: var(--header-top-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-logo__link img {
+    height: 41px;
+}
+
+.header__search {
+    height: var(--header-search-height);
+    width: 750px;
+    display: flex;
+}
+
+.header-search__cat-selector {
+    padding: 8px 15px;
+    width: 174px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.header-search__cat-selector-text {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-search__cat-selector-text i {
+    transform: translateY(2px);
+}
+
+.header-search__input {
+    border: 1px solid #ccc;
+    flex: 1;
+    display: flex;
+}
+
+.header-search__input input {
+    flex: 1;
+    font-size: 14px;
+    padding: 10px 15px;
+}
+
+.header-search__input button {
+    width: var(--header-search-height);
+    height: var(--header-search-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-search__input button i {
+    font-size: 18px;
+}
+
+.header__action {
+    display: flex;
+    align-items: center;
+}
+
+.header-action__item {
+    width: var(--header-search-height);
+    height: var(--header-search-height);
+}
+
+.header-action__item a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-action__item i {
+    font-size: 20px;
+}
+
+.header-separate {
+    position: relative;
+    left: 0;
+    transform: translateX(-30%);
+    width: 150vw;
+    height: 1px;
+    background-color: #ccc;
+
+}
+
+.bottom-header {
+    height: var(--header-bottom-height);
+}
+
+.header__menu {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header-menu__list {
+    padding-left: 0;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-menu__item {
+    height: 100%;
+}
+
+.header-menu__item a {
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-menu__item a i {
+    margin-left: 6px;
+    transform: translateY(1px);
+}
